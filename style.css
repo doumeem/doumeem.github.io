@@ -1,0 +1,101 @@
+:root {
+    --black: #1f1f1f;
+    --white: #f1f1f1;
+    --smoke: #c9d0d2;
+    --blue: #4672fe;
+}
+
+@font-face {
+    font-family: "Persian";
+    src: url("./assets/IRANYekan Web Black.ttf") format("truetype")
+}
+
+body {
+    margin: 0;
+    font-family: "Persian";
+    background: var(--black);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    background: var(--black);
+    animation: backgroundShadowAnimate 2.5s ease infinite;
+}
+
+@keyframes backgroundShadowAnimate {
+    50% {
+        box-shadow: 0px 0px 25px 0px var(--blue);
+    }
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 75px;
+    flex-basis: 100%;
+    top: 25px;
+    width: 100%;
+    height: 25px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: var(--white);
+    font-size: 25px;
+    transition: all 0.25s linear;
+}
+
+.kunai {
+    height: 100%;
+    padding: 0 15px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(19%) saturate(17%) hue-rotate(180deg) brightness(112%) contrast(89%);
+    animation: rotateAnimate 0.75s linear infinite;
+    animation-play-state: paused;
+}
+
+.title:hover {
+    color: var(--blue);
+}
+
+.title:hover .kunai {
+    animation-play-state: running;
+}
+
+@keyframes rotateAnimate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.socials {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 7.5px;
+}
+
+.fa {
+    color: var(--white);
+    transition: all 0.1s linear;
+}
+
+.fa:hover {
+    color: var(--blue);
+}
