@@ -44,7 +44,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    column-gap: 75px;
+    column-gap: 50px;
     flex-basis: 100%;
     top: 25px;
     width: 100%;
@@ -86,16 +86,18 @@ body {
 
 .socials {
     position: relative;
+    top: 2.5px;
     display: flex;
     flex-direction: row;
-    column-gap: 7.5px;
+    column-gap: 15px;
 }
 
-.fa {
+.icon {
+    transform: scale(1.25);
     color: var(--white);
     transition: all 0.1s linear;
 }
 
-.fa:hover {
+.icon:hover {
     color: var(--blue);
 }
