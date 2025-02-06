@@ -25,6 +25,7 @@ body {
     position: absolute;
     overflow: hidden;
     display: flex;
+    justify-content: center;
     width: 95%;
     height: 95%;
     border-radius: 20px;
@@ -38,8 +39,9 @@ body {
     }
 }
 
-.navbar {
+.bar {
     position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,58 +49,21 @@ body {
     column-gap: 50px;
     flex-basis: 100%;
     top: 25px;
-    width: 100%;
+    max-width: 95%;
     height: 100px;
     animation: fadeInDown 1s ease-in-out;
 }
 
-.title {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100%;
+.title, .bi {
     color: var(--white);
-    font-size: 50px;
+    font-size: 2rem;
     transition: all 0.25s linear;
 }
 
-.kunai {
-    height: 75%;
-    padding: 0 30px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(19%) saturate(17%) hue-rotate(180deg) brightness(112%) contrast(89%);
-    animation: rotateAnimate 0.75s linear infinite;
-    animation-play-state: paused;
-}
-
-.title:hover {
-    color: var(--blue);
-}
-
-.title:hover .kunai {
-    animation-play-state: running;
-}
-
-@keyframes rotateAnimate {
-    to {
-        transform: rotate(1turn);
-    }
-}
-
-.socials {
-    position: relative;
-    top: 2.5px;
-    display: flex;
-    flex-direction: row;
-}
-
 .bi {
-    position: relative;
-    padding: 0 25px;
-    transform: scale(2);
-    color: var(--white);
-    transition: all 0.1s linear;
+    padding-right: 10px;
 }
 
-.bi:hover {
+.title:hover, .bi:hover {
     color: var(--blue);
 }
