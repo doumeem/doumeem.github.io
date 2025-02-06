@@ -13,16 +13,15 @@
 body {
     margin: 0;
     font-family: "Persian";
-    background: var(--black);
-    height: 100vh;
 }
 
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: var(--black);
 }
 
 .box {
@@ -30,9 +29,9 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border-radius: 30px;
     background: var(--black);
     animation: backgroundShadowAnimate 2.5s ease infinite;
 }
