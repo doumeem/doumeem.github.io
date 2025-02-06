@@ -15,10 +15,14 @@ body {
     font-family: "Persian";
     background: var(--black);
     height: 100vh;
-    overflow: hidden;
+}
+
+.wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .box {
@@ -26,8 +30,8 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    width: 95%;
-    height: 95%;
+    width: calc(100% - 25px);
+    height: calc(100% - 25px);
     border-radius: 20px;
     background: var(--black);
     animation: backgroundShadowAnimate 2.5s ease infinite;
@@ -46,17 +50,17 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    text-align: center;
     column-gap: 50px;
     flex-basis: 100%;
-    top: 25px;
-    max-width: 95%;
+    max-width: 90%;
     height: 100px;
     animation: fadeInDown 1s ease-in-out;
 }
 
 .title, .bi {
     color: var(--white);
-    font-size: 2rem;
+    font-size: 1.75rem;
     transition: all 0.25s linear;
 }
 
