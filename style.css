@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     background: var(--black);
@@ -44,14 +44,10 @@ body {
 
 .kunai {
     position: relative;
-    width: 15vw;
+    width: 20vw;
     box-shadow: 0 0 25px solid var(--dark);
     filter: brightness(0) saturate(100%) invert(86%) sepia(77%) saturate(0%) hue-rotate(57deg) brightness(114%) contrast(89%);
     transition: all 0.25s ease;
-}
-
-.kunai:hover {
-    filter: brightness(0) saturate(100%) invert(41%) sepia(89%) saturate(6095%) hue-rotate(195deg) brightness(92%) contrast(103%);
 }
 
 .content h1 {
@@ -66,13 +62,13 @@ span {
 }
 
 .content h3 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .content p {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -84,14 +80,14 @@ span {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 8rem;
+    height: 8rem;
     margin: 3rem 1.5rem 3rem 0;
     border: 0.2rem solid var(--light);
     border-radius: 50%;
     color: var(--white);
     background: transparent;
-    font-size: 2rem;
+    font-size: 4rem;
     transition: 0.25s ease;
 }
 
@@ -100,6 +96,19 @@ span {
     background: var(--white);
     box-shadow: 0 0 25px var(--light);
     transform: scale(1.3) translateY(-5px);
+}
+
+.follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: var(--white);
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
 }
 
 @media (max-width: 1000px) {
@@ -114,29 +123,21 @@ span {
         margin: 5rem 4rem;
     }
 
+    .kunai {
+        width: 50vw;
+        margin-top: 4rem;
+    }
+
     .content h1 {
         font-size: 5rem;
     }
 
     .content h3 {
+        font-size: 4rem;
+    }
+
+    .content p {
         font-size: 2.5rem;
+        font-weight: 500;
     }
-
-    .kunai {
-        width: 50vw;
-        margin-top: 4rem;
-    }
-}
-
-.follower {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    background: var(--white);
-    opacity: 0;
-    user-select: none;
-    pointer-events: none;
 }

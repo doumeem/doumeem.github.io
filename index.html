@@ -51,14 +51,14 @@
             });
         };
 
-        if (!isTouchDevice) createCursorFollower();
-
         let typed = new Typed(".typing", {
             strings: ["Developer", "Weeb", "Comic Reader", "Normal Dude"],
             loop: true,
             typeSpeed: 50,
             backSpeed: 50,
         });
+
+        if (!isTouchDevice) createCursorFollower();
     </script>
 </body>
 </html>
