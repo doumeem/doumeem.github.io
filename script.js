@@ -6,15 +6,13 @@ const createCursorFollower = () => {
         gsap.to($el, {
             x: x-20,
             y: y-15,
-            duration: 0.5,
-            ease: "power4",
+            duration: 0.25,
             opacity: 0.25,
         });
     });
-    window.addEventListener("mouseleave", (e) => {
+    window.addEventListener("mouseout", (e) => {
         gsap.to($el, {
-            duration: 0.5,
-            ease: "power4",
+            duration: 0.25,
             opacity: 0,
         });
     });
