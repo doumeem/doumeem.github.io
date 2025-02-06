@@ -92,12 +92,12 @@ body {
     column-gap: 15px;
 }
 
-.icon {
+.bi {
     transform: scale(1.25);
     color: var(--white);
     transition: all 0.1s linear;
 }
 
-.icon:hover {
+.bi:hover {
     color: var(--blue);
 }
