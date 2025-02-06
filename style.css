@@ -78,7 +78,7 @@ span:hover {
     justify-content: center;
     width: 6rem;
     height: 6rem;
-    margin: 2.5rem;
+    margin: 1.5rem;
     border: 0.2rem solid var(--blue);
     border-radius: 50%;
     color: var(--white);
@@ -91,7 +91,7 @@ span:hover {
     color: var(--blue);
     background: var(--white);
     box-shadow: 0 0 25px var(--blue);
-    transform: scale(1.75);
+    transform: scale(1.25);
 }
 
 .follower {
