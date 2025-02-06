@@ -55,10 +55,12 @@
         };
 
         const typed = new Typed(".typing", {
-            strings: ["Dude", "Developer", "Weeb", "Gamer", "Streamer"],
+            strings: ["Dude", "Developer", "Weeb", "Gamer", "Metalhead", "Streamer"],
             loop: true,
             typeSpeed: 50,
             backSpeed: 50,
+            startDelay: 500,
+            cursorChar: ' |',
         });
 
         if (!isTouchDevice) createCursorFollower();
