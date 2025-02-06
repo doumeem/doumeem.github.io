@@ -25,6 +25,7 @@ const typed = new Typed(".typing", {
     loop: true,
     typeSpeed: 100,
     backSpeed: 50,
+    cursorChar: ' |',
 });
 
 if (!isTouchDevice) createCursorFollower();
