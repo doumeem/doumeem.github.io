@@ -7,26 +7,58 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="./assets/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
     <div class="wrapper">
-        <div class="bar">
-            <div class="title">
-                Dou
-                Meem
-            </div>
-            <div class="socials">
-                <a target="_blank" href="https://github.com/doumeem" class="bi bi-github"></a>
-            </div>
+        <div class="frame">
+            <img src="./icon.png" alt="" class="kunai">
         </div>
         <div class="content">
-            I'm Mahraam, a (born in 2007) years old developer from Iran.
-            <br>
-            I do a variety of differents things, from coding to watching anime and reading comics
-            <br>
-            I've done projects for most of the famous persian twitch and youtube streamers, with making goal and chat widgets for them.
+            <h1>Hi, It's <span>DouMeem</span></h1>
+            <h3>A <span class="typing"></span></h3>
+            <p>I'm Mahraam Shojaapour, a (born in 2007) years old human who lives in Iran and has passion for mostly everything that is accessable in the world =)</p>
+            <div class="socials">
+                <a target="_blank" href="https://github.com/doumeem"><i class="bi bi-github"></i></a>
+                <a target="_blank" href="https://instagram.com/dou.meem"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://twitch.tv/dou_meem"><i class="bi bi-twitch"></i></a>
+            </div>
         </div>
     </div>
+    <div class="follower"></div>
+
+    <script>
+        const isTouchDevice = "ontouchstart" in window;
+        const createCursorFollower = () => {
+            const $el = document.querySelector(".follower");
+            window.addEventListener("mousemove", (e) => {
+                const { target, x, y } = e;
+                const isTragetLinkOrBtn = target?.closest("a") || target?.closest("button");
+                gsap.to($el, {
+                    x: x-5,
+                    y: y-2.5,
+                    duration: 0.5,
+                    ease: "power4",
+                    opacity: isTragetLinkOrBtn ? 0.6 : 1,
+                });
+            });
+            window.addEventListener("mouseleave", (e) => {
+                gsap.to($el, {
+                    duration: 0.5,
+                    opacity: 0,
+                });
+            });
+        };
+
+        if (!isTouchDevice) createCursorFollower();
+
+        let typed = new Typed(".typing", {
+            strings: ["Developer", "Weeb", "Comic Reader", "Normal Dude"],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 50,
+        });
+    </script>
 </body>
 </html>
