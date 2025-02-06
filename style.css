@@ -3,8 +3,7 @@
 :root {
     --black: #1f1f1f;
     --white: #f1f1f1;
-    --light: #0070d1;
-    --dark: #00439c;
+    --blue: #2d64e6
 }
 
 * {
@@ -39,14 +38,12 @@ body {
     text-align: center;
     gap: 8rem;
     background-color: var(--black);
+    animation: fadeIn 0.75s linear;
 }
 
 .kunai {
     position: relative;
     width: 20vw;
-    box-shadow: 0 0 25px solid var(--dark);
-    filter: brightness(0) saturate(100%) invert(86%) sepia(77%) saturate(0%) hue-rotate(57deg) brightness(114%) contrast(89%);
-    transition: all 0.25s ease;
 }
 
 .content h1 {
@@ -56,7 +53,7 @@ body {
 }
 
 span {
-    color: var(--light);
+    color: var(--blue);
     font-weight: 900;
     transition: 0.25s ease;
 }
@@ -83,7 +80,7 @@ span:hover {
     width: 6rem;
     height: 6rem;
     margin: 3rem 2rem 3rem 0;
-    border: 0.2rem solid var(--light);
+    border: 0.2rem solid var(--blue);
     border-radius: 50%;
     color: var(--white);
     background: transparent;
@@ -92,9 +89,9 @@ span:hover {
 }
 
 .socials a:hover {
-    color: var(--light);
+    color: var(--blue);
     background: var(--white);
-    box-shadow: 0 0 25px var(--light);
+    box-shadow: 0 0 25px var(--blue);
     transform: scale(1.25);
 }
 
@@ -102,10 +99,10 @@ span:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
-    background: var(--light);
+    background: var(--blue);
     opacity: 0;
     user-select: none;
     pointer-events: none;

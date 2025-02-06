@@ -17,9 +17,9 @@
             <img src="./icon.png" alt="" class="kunai">
         </div>
         <div class="content">
-            <h1>Hello There</h1>
+            <h1>HI</h1>
             <h3>A <span class="typing"></span></h3>
-            <p>I'm <span>Mahraam</span> or aka. <span>DouMeem</span>, a (born in 2007) years old human who lives in Iran and has passion for mostly everything that is accessible in the world</p>
+            <p>I'm <span>Mahraam</span> aka <span>DouMeem</span>, a (born in 2007) years old human who lives in Iran and has passion for mostly everything that is accessible in the world</p>
             <div class="socials">
                 <a target="_blank" href="https://github.com/doumeem"><i class="bi bi-github"></i></a>
                 <a target="_blank" href="https://instagram.com/dou.meem"><i class="bi bi-instagram"></i></a>
@@ -28,41 +28,6 @@
         </div>
     </div>
     <div class="follower"></div>
-
-    <script>
-        const isTouchDevice = "ontouchstart" in window;
-        const createCursorFollower = () => {
-            const $el = document.querySelector(".follower");
-            window.addEventListener("mousemove", (e) => {
-                const { target, x, y } = e;
-                const isTragetLinkOrBtn = target?.closest("a") || target?.closest("button");
-                gsap.to($el, {
-                    x: x-5,
-                    y: y-2.5,
-                    duration: 0.5,
-                    ease: "power4",
-                    opacity: isTragetLinkOrBtn ? 0.25 : 1,
-                });
-            });
-            window.addEventListener("mouseleave", (e) => {
-                gsap.to($el, {
-                    duration: 0.5,
-                    ease: "power4",
-                    opacity: 0,
-                });
-            });
-        };
-
-        const typed = new Typed(".typing", {
-            strings: ["Dude", "Developer", "Weeb", "Gamer", "Metalhead", "Streamer"],
-            loop: true,
-            typeSpeed: 50,
-            backSpeed: 50,
-            startDelay: 500,
-            cursorChar: ' |',
-        });
-
-        if (!isTouchDevice) createCursorFollower();
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
