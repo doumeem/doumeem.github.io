@@ -137,4 +137,6 @@ span {
     border-radius: 100%;
     background: var(--white);
     opacity: 0;
+    user-select: none;
+    pointer-events: none;
 }
