@@ -26,12 +26,14 @@ const typed = new Typed(".typing", {
     cursorChar: ' |',
 });
 
-// https://twitch.tv/dou_meem
-// if text has isLiveBroadcast
-
-$.ajax({
-    url: "https://decapi.me/twitch/uptime/dou_meem",
-    success: (data) => {if (!data.includes("offline")) $(".twitch").addClass("live");}
-});
+setInterval(() => {
+    $.ajax({
+        url: "https://decapi.me/twitch/uptime/dou_meem",
+        success: (data) => {
+            if (!data.includes("offline")) $(".twitch").addClass("live");
+            else $(".twitch").removeClass("live");
+        }
+    });
+}, 10000);
 
 if (!isTouchDevice) createCursorFollower();
