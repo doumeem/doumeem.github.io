@@ -94,6 +94,17 @@ span:hover {
     transform: scale(1.25);
 }
 
+.live {
+    animation: blinkAnimate 1s ease infinite;
+}
+
+@keyframes blinkAnimate {
+    50% {
+        color: var(--blue);
+        background: var(--white);
+    }
+}
+
 .follower {
     position: fixed;
     top: 0;
