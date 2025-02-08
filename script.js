@@ -35,5 +35,5 @@ setInterval(() => {
         }
     });
 }, 10000);
-
-if (!isTouchDevice) createCursorFollower();
+createCursorFollower();
+// if (!isTouchDevice) createCursorFollower();
