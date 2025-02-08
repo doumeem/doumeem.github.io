@@ -116,6 +116,16 @@ span:hover {
     }
 }
 
+.rights {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    bottom: 2.5%;
+    font-size: 2.5rem;
+}
+
 .follower {
     position: fixed;
     top: 0;
