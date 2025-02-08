@@ -10,9 +10,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
     user-select: none;
     font-family: "Poppins", sans-serif;
 }
@@ -138,7 +135,6 @@ span:hover {
 @media (max-width: 995px) {
     .wrapper {
         flex-direction: column;
-        margin: 2.5rem 2rem;
     }
 
     .kunai {
