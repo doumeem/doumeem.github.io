@@ -4,19 +4,19 @@ window.addEventListener("mousemove", (e) => {
     gsap.to($el, {
         x: x-20,
         y: y-15,
-        duration: 0.25,
-        opacity: 0.25,
+        duration: 0.5,
+        opacity: 0.5,
     });
 });
 window.addEventListener("mouseout", (e) => {
     gsap.to($el, {
-        duration: 0.25,
+        duration: 0.5,
         opacity: 0,
     });
 });
 
 const typed = new Typed(".typing", {
-    strings: ["Dude", "Developer", "Weeb", "Gamer", "Metalhead", "Streamer"],
+    strings: ["Developer", "Weeb", "Gamer", "Metalhead", "Streamer"],
     loop: true,
     typeSpeed: 100,
     backSpeed: 50,

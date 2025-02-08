@@ -116,16 +116,6 @@ span:hover {
     }
 }
 
-.rights {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    bottom: 2%;
-    font-size: 2rem;
-}
-
 .follower {
     position: fixed;
     top: 0;
