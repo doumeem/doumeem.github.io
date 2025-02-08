@@ -1,22 +1,19 @@
-const isTouchDevice = "ontouchstart" in window;
-const createCursorFollower = () => {
-    const $el = document.querySelector(".follower");
-    window.addEventListener("mousemove", (e) => {
-        const { target, x, y } = e;
-        gsap.to($el, {
-            x: x-20,
-            y: y-15,
-            duration: 0.25,
-            opacity: 0.25,
-        });
+const $el = document.querySelector(".follower");
+window.addEventListener("mousemove", (e) => {
+    const { target, x, y } = e;
+    gsap.to($el, {
+        x: x-20,
+        y: y-15,
+        duration: 0.25,
+        opacity: 0.25,
     });
-    window.addEventListener("mouseout", (e) => {
-        gsap.to($el, {
-            duration: 0.25,
-            opacity: 0,
-        });
+});
+window.addEventListener("mouseout", (e) => {
+    gsap.to($el, {
+        duration: 0.25,
+        opacity: 0,
     });
-};
+});
 
 const typed = new Typed(".typing", {
     strings: ["Dude", "Developer", "Weeb", "Gamer", "Metalhead", "Streamer"],
@@ -25,6 +22,8 @@ const typed = new Typed(".typing", {
     backSpeed: 50,
     cursorChar: ' |',
 });
+
+$(".age").html(Math.abs(new Date(Date.now()-new Date("12/02/2007").getTime()).getUTCFullYear()-1970));
 
 setInterval(() => {
     $.ajax({
@@ -35,5 +34,3 @@ setInterval(() => {
         }
     });
 }, 10000);
-createCursorFollower();
-// if (!isTouchDevice) createCursorFollower();
