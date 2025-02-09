@@ -12,6 +12,7 @@
     box-sizing: border-box;
     text-decoration: none;
     user-select: none;
+    pointer-events: none;
     font-family: "Poppins", sans-serif;
 }
 
@@ -123,8 +124,7 @@ span:hover {
     border-radius: 100%;
     background: var(--blue);
     opacity: 0;
-    user-select: none;
-    pointer-events: none;
+    mix-blend-mode: difference;
 }
 
 @media (max-width: 1000px) {
