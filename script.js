@@ -33,4 +33,11 @@ setInterval(() => {
             else $(".twitch").removeClass("live");
         }
     });
+    $.ajax({
+        url: "https://decapi.me/twitch/uptime/mehrsonn",
+        success: (data) => {
+            if (!data.includes("offline")) $(".mehrsonn").addClass("live");
+            else $(".mehrsonn").removeClass("live");
+        }
+    });
 }, 10000);
