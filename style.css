@@ -135,6 +135,7 @@ span:hover {
 @media (max-width: 995px) {
     .wrapper {
         flex-direction: column;
+        padding: 5rem;
     }
 
     .kunai {
