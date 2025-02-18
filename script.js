@@ -27,16 +27,9 @@ $(".age").html(Math.abs(new Date(Date.now()-new Date("12/02/2007").getTime()).ge
 
 setInterval(() => {
     $.ajax({
-        url: "https://decapi.me/twitch/uptime/dou_meem",
+        url: "https://decapi.me/twitch/uptime/doumeem",
         success: (data) => {
             if (!data.includes("offline")) $(".twitch").addClass("live");
-            else $(".twitch").removeClass("live");
-        }
-    });
-    $.ajax({
-        url: "https://decapi.me/twitch/uptime/mehrsonn",
-        success: (data) => {
-            if (!data.includes("offline")) $(".twitch").addClass("live").attr("href", "https://twitch.tv/mehrsonn");
             else $(".twitch").removeClass("live");
         }
     });
