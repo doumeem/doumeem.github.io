@@ -108,6 +108,11 @@ a:hover {
     transform: scale(1.25);
 }
 
+.order {
+    width: 12rem;
+    font-size: 2rem;
+}
+
 .live {
     animation: blinkAnimate 1s ease infinite;
 }
