@@ -60,18 +60,18 @@ body {
     }
 }
 
-.content h1 {
+h1 {
     margin-bottom: 1rem;
     font-size: 5rem;
     font-weight: 700;
 }
 
-.content h3 {
+h3 {
     font-size: 3rem;
     font-weight: 500;
 }
 
-.content h5 {
+h5 {
     font-size: 2rem;
     font-weight: 300;
 }
@@ -86,7 +86,7 @@ span:hover {
     color: var(--white);
 }
 
-.socials a {
+a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +101,7 @@ span:hover {
     transition: 0.25s ease;
 }
 
-.socials a:hover {
+a:hover {
     color: var(--blue);
     background: var(--white);
     box-shadow: 0 0 25px var(--blue);
