@@ -106,13 +106,16 @@ a:hover {
 
 .order {
     width: 18rem;
+    margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 25%;
-    font-size: 2rem;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.25rem;
 }
 
 .socials a {
     width: 6rem;
-    margin: 1rem 0.5rem;
+    margin: 0 0.5rem 1rem 0.5rem;
     border-radius: 50%;
     font-size: 3rem;
 }
