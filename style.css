@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 7.5rem;
+    gap: 7rem;
     background-color: var(--black);
     animation: fadeIn 0.75s linear;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .content h5 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 
@@ -92,7 +92,7 @@ span:hover {
     justify-content: center;
     width: 6rem;
     height: 6rem;
-    margin: 2rem 1rem 0 1rem;
+    margin: 1rem 0.5rem;
     border: 0.2rem solid var(--blue);
     border-radius: 50%;
     color: var(--white);
@@ -133,7 +133,7 @@ span:hover {
 
 @media (max-width: 1000px) {
     .wrapper {
-        gap: 4rem;
+        gap: 3rem;
     }
 }
 
@@ -153,5 +153,9 @@ span:hover {
 
     .content h3 {
         font-size: 2rem;
+    }
+    
+    .content h5 {
+        font-size: 1.5rem;
     }
 }
