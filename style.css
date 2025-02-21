@@ -71,6 +71,11 @@ body {
     font-weight: 500;
 }
 
+.content h5 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 span {
     color: var(--blue);
     font-weight: 900;
