@@ -90,14 +90,10 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 6rem;
     height: 6rem;
-    margin: 1rem 0.5rem;
     border: 0.2rem solid var(--blue);
-    border-radius: 50%;
     color: var(--white);
     background: transparent;
-    font-size: 3rem;
     transition: 0.25s ease;
 }
 
@@ -110,7 +106,15 @@ a:hover {
 
 .order {
     width: 12rem;
+    border-radius: 25%;
     font-size: 2rem;
+}
+
+.socials a {
+    width: 6rem;
+    margin: 1rem 0.5rem;
+    border-radius: 50%;
+    font-size: 3rem;
 }
 
 .live {
