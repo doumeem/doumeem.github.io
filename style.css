@@ -100,6 +100,7 @@ a {
     justify-content: center;
     height: 6rem;
     border: 0.2rem solid var(--blue);
+    border-radius: 4rem;
     color: var(--white);
     background: transparent;
     transition: 0.25s ease;
@@ -114,7 +115,6 @@ a:hover {
 
 .order {
     width: 18rem;
-    border-radius: 10%;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 0.25rem;
@@ -122,12 +122,11 @@ a:hover {
 
 .socials {
     display: flex;
-    gap: 0.5rem;
+    gap: 1.5rem;
 }
 
 .socials a {
     width: 6rem;
-    border-radius: 50%;
     font-size: 3rem;
 }
 
