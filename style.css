@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 7rem;
+    gap: 6rem;
     background-color: var(--black);
     animation: fadeIn 0.75s linear;
 }
