@@ -98,6 +98,7 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    height: 6rem;
     border: 0.2rem solid var(--blue);
     color: var(--white);
     background: transparent;
@@ -113,7 +114,6 @@ a:hover {
 
 .order {
     width: 18rem;
-    height: 9rem;
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 40%;
     font-size: 2rem;
@@ -123,8 +123,6 @@ a:hover {
 
 .socials a {
     width: 6rem;
-    height: 6rem;
-    margin: 0 0.5rem 1rem 0.5rem;
     border-radius: 50%;
     font-size: 3rem;
 }
