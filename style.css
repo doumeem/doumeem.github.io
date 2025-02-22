@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 6rem;
+    gap: 5rem;
     background-color: var(--black);
     animation: fadeIn 0.75s linear;
 }
@@ -157,7 +157,7 @@ a:hover {
 
 @media (max-width: 1000px) {
     .wrapper {
-        gap: 3rem;
+        gap: 2.5rem;
     }
 }
 
