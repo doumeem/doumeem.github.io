@@ -115,7 +115,7 @@ a:hover {
 .order {
     width: 18rem;
     margin: 1rem 0.5rem 0 0.5rem;
-    border-radius: 40%;
+    border-radius: 10%;
     font-size: 2rem;
     font-weight: 600;
     letter-spacing: 0.25rem;
