@@ -62,8 +62,11 @@ body {
 
 .content {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.5rem;
 }
 
 h1 {
