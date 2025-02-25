@@ -23,13 +23,13 @@
       --color-black: #1f1f1f;
       --color-white: #f1f1f1;
       --color-blue: #2d64e6;
-      --animate-wiggle: wiggle 7s ease-in-out infinite;
+      --animate-wiggle: wiggle 5s ease-in-out infinite;
       @keyframes wiggle {
         0%, 100% {
-          transform: rotate(-3deg);
+          transform: rotate(-2.5deg);
         }
         50% {
-          transform: rotate(3deg);
+          transform: rotate(2.5deg);
         }
       }
     }
@@ -48,7 +48,7 @@
     </div>
   </div>
   <div class="h-full w-full flex flex-col gap-3 justify-center items-center text-center">
-    <img class="max-w-xs animate-wiggle hover:brightness-0 hover:invert duration-250" src="./icon.png" alt=""/>
+    <img class="max-w-xs m-5 animate-wiggle hover:brightness-0 hover:invert duration-250" src="./icon.png" alt=""/>
     <div class="font-bold text-3xl">
       I'm <span class="text-blue font-black hover:text-white duration-250">Mahraam</span>!
     </div>
